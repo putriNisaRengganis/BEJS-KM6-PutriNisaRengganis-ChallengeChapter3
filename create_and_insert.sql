@@ -5,9 +5,9 @@ You are now connected to database "ch3_challenge" as user "postgres".
 */
 
 CREATE TYPE jenis_kelamin AS ENUM('laki-laki','perempuan');
-CREATE TYPE
+-- CREATE TYPE
 CREATE TYPE status_akun AS ENUM('Aktif','Tidak Aktif');
-CREATE TYPE
+-- CREATE TYPE
 
 create table nasabah(
 id bigserial primary key,
@@ -130,7 +130,7 @@ inner join transaksi on akun.id = transaksi.id_akun;
 
 --DELETE--
 delete from transaksi where id =1;
-DELETE 1
+-- DELETE 1
 select*from transaksi;
 /* id | jenis_transaksi | nominal | keterangan | tanggal | id_akun
 ----+-----------------+---------+------------+---------+---------
